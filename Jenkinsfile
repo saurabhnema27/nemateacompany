@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'php --version'
                 sh 'composer update'
                 sh 'composer dump-autoload'
                 sh 'php artisan config:clear'
