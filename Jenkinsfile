@@ -8,7 +8,7 @@ pipeline {
                 sh 'composer dump-autoload'
                 sh 'php artisan config:clear'
                 sh 'php artisan cache:clear'
-                sh 'All done'
+                sh 'All done test successfully'
             }
         }
     }
