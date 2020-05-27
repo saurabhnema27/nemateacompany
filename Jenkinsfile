@@ -4,8 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'composer update'
-                cp .env.example .env
-                composer install
+                sh 'cp .env.example .env'
+                sh 'composer install'
                 sh 'composer dump-autoload'
                 sh 'php artisan config:clear'
                 sh 'php artisan cache:clear'
