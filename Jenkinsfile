@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'composer update'
-                php -r "file_exists('.env') || copy('.env.example', '.env');"
+                cp .env.example .env
                 composer install
                 sh 'composer dump-autoload'
                 sh 'php artisan config:clear'
