@@ -4,11 +4,12 @@ pipeline {
         stage('build') {
             steps {
                 sh 'composer update'
-                sh 'php -r "file_exists('.env') || copy('.env.example', '.env');"'
+                php -r "file_exists('.env') || copy('.env.example', '.env');"
+                composer install
                 sh 'composer dump-autoload'
                 sh 'php artisan config:clear'
                 sh 'php artisan cache:clear'
-                sh 'All done test successfully'
+                echo 'All done test successfully'
             }
         }
     }
