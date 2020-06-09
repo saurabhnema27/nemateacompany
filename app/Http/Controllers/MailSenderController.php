@@ -22,7 +22,6 @@ class MailSenderController extends Controller
             "subject" => $request->subject,
             "message" => $request->message
         ];
-
         
         // This is for customer
         \Mail::to($request->email)->cc("saurabh@nemateacompany.com")->bcc("laxmannema@gmail.com")

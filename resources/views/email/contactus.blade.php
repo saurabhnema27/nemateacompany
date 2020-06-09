@@ -20,10 +20,10 @@
         <p class="lead"><strong>We will look to it,</strong> and try to answer you as soon as possible mean time you can explore more and give us a feedback.</p>
         <hr>
         <p>
-          Till then you can register to us <a href="https://nemateacompany.com/">Register</a>
+          Till then you can register to us <a href="http://nemateacompany.com/">Register</a>
         </p>
         <p class="lead">
-          <a class="btn btn-primary btn-sm" href="https://nemateacompany.com/" role="button">Continue to homepage</a>
+          <a class="btn btn-primary btn-sm" href="http://nemateacompany.com/" role="button">Continue to homepage</a>
         </p>
       </div>
 </body>

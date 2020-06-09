@@ -60,18 +60,18 @@
     {{-- Products --}}
     <div class="container mt-5" id="products">
       <h3 class="display-3 text-center">Products</h3>
-      <div class="d-flex justify-content-between">
-        <div class="p-2 bd-highlight">
+      <div class="row">
+        <div class="col-sm">
           <h3 class="h5">Raw Tea Leaves</h3>
           <p class="lead">These are the big tea leaves which are available form different gardens of Assam, Darjiling, and other tea gardens. This brings bright and energetic sunshine for your morning routine.</p>
           <a href="#" class="btn btn-warning">Buy Now</a>
         </div>
-        <div class="p-2 bd-highlight">
+        <div class="col-sm">
           <h3 class="h5">Granularity Tea Leaves</h3>
           <p class="lead">They are the chunks of raw tea leaves which go through the process of granularity and after it put to dry for days, then they are ready to make you your better health and better immunity to fight the odds.</p>
           <a href="#" class="btn btn-warning">Buy Now</a>
         </div>
-        <div class="p-2 bd-highlight">
+        <div class="col-sm">
           <h3 class="h5">Tea Masala's</h3>
           <p class="lead">We're offering you a mixed variety of Tea Masala's which is made up of Ginger, Balck-Paper, Cloves, Cardamom, mulethi(liquorice) and much more ground herbs and oregano's, to make you immune system better.</p>
           <a href="#" class="btn btn-warning">Buy Now</a>
@@ -82,11 +82,11 @@
     {{-- contact --}}
     <div class="container mt-5" id="contact">
       <h3 class="display-3 text-center">Contact Us</h3>
-      <div class="d-flex justify-content-between">
-        <div class="p-2 bd-highlight">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.369933000432!2d77.45774151480414!3d23.193185284866935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43db5e903a47%3A0x3d21d622f55fdf7a!2sNema%20Tea%20Company!5e0!3m2!1sen!2sin!4v1591628798603!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="row">
+        <div class="col-sm">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.369933000432!2d77.45774151480414!3d23.193185284866935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43db5e903a47%3A0x3d21d622f55fdf7a!2sNema%20Tea%20Company!5e0!3m2!1sen!2sin!4v1591628798603!5m2!1sen!2sin" width="550" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <div class="p-2 bd-highlight">  
+        <div class="col-sm">  
           @if(Session::has('success'))
           <div class="alert alert-warning alert-dismissible fade show" role="alert">
           <strong>{{ Session::get('success') }}
