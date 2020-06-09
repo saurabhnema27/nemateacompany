@@ -51,9 +51,9 @@
     {{-- About section --}}
     <div class="container mt-5" id = "about">
       <h3 class="display-3 text-center">About Us</h3>
-        <p class="text-center text-justify">NemaTeaCompany is an industry-leading Tea Wholesaler, supplying individuals and companies with the products they need. We were founded in 1975 by Nema Group, and have been located in Bhopal ever since. Learn all about nemateacompany and what we offer by giving us a call. We’ll be happy to assist you with any information regarding a specific product or service.
+        <p class="text-center text-justify">NemaTeaCompany is an industry-leading Tea Wholesaler, supplying individuals and companies with the products they need. We were founded in 1975 by Nema Group, and have been located in Bhopal ever since. Learn all about nemateacompany and other offer's, just by giving us a call or dropping us a mail. We’ll be happy to assist you with any information regarding a specific product or service.
           <br><br>
-          When it comes to choosing the right wholesale supplier for your business, you can count on nemateacompany for quality products at affordable prices. We offer a wide selection of goods to individuals or businesses and are located right in the Bhopal, IN. Contact us to see what we’ve got in store for you today.
+          We're the right wholesaler supplier for your business / Individual, you can count on nemateacompany for quality products at affordable prices. We offer a wide selection of tea leaves and tea masala's for the people at Bhopal, IN. If you have something for us related to Tea Leaves / Tea Bags / Tea Masala's and even any suggestions related to this then please let us know we'll love to hear it out.
         </p>
     </div>
 
@@ -62,18 +62,23 @@
       <h3 class="display-3 text-center">Products</h3>
       <div class="row">
         <div class="col-sm">
-          <h3 class="h5">Raw Tea Leaves</h3>
-          <p class="lead">These are the big tea leaves which are available form different gardens of Assam, Darjiling, and other tea gardens. This brings bright and energetic sunshine for your morning routine.</p>
+          <h3 class="h5">Tea Leaves</h3>
+          <p class="lead">These are the big tea leaves which are available form different gardens of Assam, Darjiling, and other tea gardens. This brings bright and energetic morning routine for all tea lovers. This type of Tea leave will only give you a great taste but not good color.</p>
           <a href="#" class="btn btn-warning">Buy Now</a>
         </div>
         <div class="col-sm">
-          <h3 class="h5">Granularity Tea Leaves</h3>
-          <p class="lead">They are the chunks of raw tea leaves which go through the process of granularity and after it put to dry for days, then they are ready to make you your better health and better immunity to fight the odds.</p>
+          <h3 class="h5">Granularity Tea</h3>
+          <p class="lead">They are the chunks of tea leaves which is mainly of round shape,  which go through the process of granularity and after it put to dry for days, then they are ready to make you your better health and better immunity to fight the odds. It give you a light color but a great taste in tea</p>
+          <a href="#" class="btn btn-warning">Buy Now</a>
+        </div>
+        <div class="col-sm">
+          <h3 class="h5">Dust Tea</h3>
+          <p class="lead">They are dusty tea which is made from tea leaves after giving a fine mixter and then drying it up. It is mainly use to get a color in tea with a light taste in it.</p>
           <a href="#" class="btn btn-warning">Buy Now</a>
         </div>
         <div class="col-sm">
           <h3 class="h5">Tea Masala's</h3>
-          <p class="lead">We're offering you a mixed variety of Tea Masala's which is made up of Ginger, Balck-Paper, Cloves, Cardamom, mulethi(liquorice) and much more ground herbs and oregano's, to make you immune system better.</p>
+          <p class="lead">We're offering you a mixed variety of Tea Masala's which is made up of Ginger, Balck-Paper, Cloves, Cardamom, mulethi and much more ground herbs and oregano's, to make you immune system better.</p>
           <a href="#" class="btn btn-warning">Buy Now</a>
         </div>
       </div>

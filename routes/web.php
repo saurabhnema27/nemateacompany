@@ -13,12 +13,16 @@ Jenkins trigger will work this time
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// });
 
 Route::get('/',function(){
     return view('index');
+});
+
+route::get('/feedback',function(){
+    return view('feedback');
 });
 
 Route::post('/contactus','MailSenderController@contactus');
