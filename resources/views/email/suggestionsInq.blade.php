@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Contact Inquery</title>
+    <title>Admin Suggestions Inquery</title>
     <link rel="icon" href="/images/logo.jpg">
     <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -16,15 +16,29 @@
 </head>
 <body>
     <div class="jumbotron text-center">
-        <h1 class="display-3">Thank You! {{$fullname}}</h1>
-        <p class="lead"><strong>We will look to it,</strong> and try to answer with in 24 hours of span .</p>
-        <hr>
-        <p>
-          Till then you can register to us <a href="http://nemateacompany.com/">Register</a>
-        </p>
-        <p class="lead">
-          <a class="btn btn-primary btn-sm" href="http://nemateacompany.com/" role="button">Continue to homepage</a>
-        </p>
-      </div>
+        <h3 class="display-4 text-center">Contact Form Inquery</h3>
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Number</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Message</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>{{$data['fullName']}}</td>
+                <td>{{$data['email']}}</td>
+                <td>{{$data['number']}}</td>
+                <td>{{$data['subject']}}</td>
+                <td>{{$data['message']}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
 </body>
 </html>

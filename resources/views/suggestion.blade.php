@@ -39,94 +39,57 @@
                 <a class="nav-link h6" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link h6" href="/login">Login</a>
+                <a class="nav-link h6" href="#">Login</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link h6" href="/register">Register</a>
+                <a class="nav-link h6" href="#">Register</a>
             </li>
           </ul>
         </div>
     </nav>
 
-    {{-- About section --}}
-    <div class="container mt-5" id = "about">
-      @if(Session::has('success'))
-          <div class="alert alert-warning alert-dismissible fade show" role="alert">
-          <strong>{{ Session::get('success') }}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div> 
+    {{-- suggestions --}}
+    <div class="container">  
+        <h3 class="display-h3 mt-5 text-center">Suggestion Form</h3>
+        <p class="lead text-center content-justify">This is our small motive to bring out the change in us, we're here for our valuable customers if you want some change then be the one, fill out the form below and we'll hear you out and replay in 24 hours for your query.</p>
+        @if(Session::has('suggestion'))
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{ Session::get('suggestion') }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div> 
         @endif
-      <h3 class="display-3 text-center">About Us</h3>
-        <p class="text-center text-justify">NemaTeaCompany is an industry-leading Tea Wholesaler, supplying individuals and companies with the products they need. We were founded in 1975 by Nema Group, and have been located in Bhopal ever since. Learn all about nemateacompany and other offer's, just by giving us a call or dropping us a mail. We’ll be happy to assist you with any information regarding a specific product or service.
-          <br><br>
-          We're the right wholesaler supplier for your business / Individual, you can count on nemateacompany for quality products at affordable prices. We offer a wide selection of tea leaves and tea masala's for the people at Bhopal, IN. If you have something for us related to Tea Leaves / Tea Bags / Tea Masala's and even any suggestions related to this then please let us know we'll love to hear it out.
-        </p>
-    </div>
-
-    {{-- Products --}}
-    <div class="container mt-5" id="products">
-      <h3 class="display-3 text-center">Products</h3>
-      <div class="row">
-        <div class="col-sm">
-          <h3 class="h5">Tea Leaves</h3>
-          <p class="lead">These are the big tea leaves which are available form different gardens of Assam, Darjiling, and other tea gardens. This brings bright and energetic morning routine for all tea lovers. This type of Tea leave will only give you a great taste but not good color.</p>
-          <a href="#" class="btn btn-warning">Buy Now</a>
-        </div>
-        <div class="col-sm">
-          <h3 class="h5">Granularity Tea</h3>
-          <p class="lead">They are the chunks of tea leaves which is mainly of round shape,  which go through the process of granularity and after it put to dry for days, then they are ready to make you your better health and better immunity to fight the odds. It give you a light color but a great taste in tea</p>
-          <a href="#" class="btn btn-warning">Buy Now</a>
-        </div>
-        <div class="col-sm">
-          <h3 class="h5">Dust Tea</h3>
-          <p class="lead">They are dusty tea which is made from tea leaves after giving a fine mixter and then drying it up. It is mainly use to get a color in tea with a light taste in it.</p>
-          <a href="#" class="btn btn-warning">Buy Now</a>
-        </div>
-        <div class="col-sm">
-          <h3 class="h5">Tea Masala's</h3>
-          <p class="lead">We're offering you a mixed variety of Tea Masala's which is made up of Ginger, Balck-Paper, Cloves, Cardamom, mulethi and much more ground herbs and oregano's, to make you immune system better.</p>
-          <a href="#" class="btn btn-warning">Buy Now</a>
-        </div>
+        <form action="/suggestions" method="post" class="mt-3">
+          @csrf
+          <div class="row">
+            <div class="col-12">
+              <input type="text" name="name" class="form-control" placeholder="Name" required = "required">
+            </div>
+            <div class="col-6 mt-3">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-6 mt-3">
+              <input type="number" name="number" class="form-control" placeholder="Number" required>
+            </div>
+            <div class="col-12 mt-3">
+                <select class="form-control" id="sel1" name="subject">
+                    <option>Related to website</option>
+                    <option>Related to Products</option>
+                    <option>Related to Content</option>
+                    <option>Others</option>
+                  </select>
+            </div>
+            <div class="col-12 mt-3">
+              <textarea class="form-control" rows="5" name = "message" placeholder="Enter your suggestion details" required></textarea>
+            </div>
+            <button type="submit" value="Enter your message here" id="exampleFormControlTextarea1" class="btn btn-warning mt-3 ml-3">Start the Change</button>
+          </div>  
+        </form>
       </div>
-    </div>
-
-    {{-- contact --}}
-    <div class="container mt-5" id="contact">
-      <h3 class="display-3 text-center">Contact Us</h3>
-      <div class="row">
-        <div class="col-sm">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.369933000432!2d77.45774151480414!3d23.193185284866935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43db5e903a47%3A0x3d21d622f55fdf7a!2sNema%20Tea%20Company!5e0!3m2!1sen!2sin!4v1591628798603!5m2!1sen!2sin" width="550" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-        <div class="col-sm">  
-          <form action="/contactus" method="post">
-            @csrf
-            <div class="row">
-              <div class="col-12">
-                <input type="text" name="name" class="form-control" placeholder="Name" required = "required">
-              </div>
-              <div class="col-6 mt-3">
-                <input type="email" name="email" class="form-control" placeholder="Email" required>
-              </div>
-              <div class="col-6 mt-3">
-                <input type="number" name="number" class="form-control" placeholder="Number" required>
-              </div>
-              <div class="col-12 mt-3">
-                <input type="text" name="subject" class="form-control" placeholder="subject" required>
-              </div>
-              <div class="col-12 mt-3">
-                <textarea class="form-control" rows="5" name = "message" required></textarea>
-              </div>
-              <button type="submit" value="Enter your message here" id="exampleFormControlTextarea1" class="btn btn-warning mt-3 ml-3">Smash It</button>
-            </div>  
-          </form>
-        </div>
-      </div>    
-    </div>
-
+    
     {{-- Footer --}}
-      <div class="container mt-5">
+    <div class="container mt-5">
         <!-- Footer -->
 <footer class="page-footer font-small">
 

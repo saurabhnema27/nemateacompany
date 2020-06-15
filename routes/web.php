@@ -21,8 +21,13 @@ Route::get('/',function(){
     return view('index');
 });
 
-route::get('/feedback',function(){
-    return view('feedback');
+route::get('/suggestion',function(){
+    return view('suggestion');
 });
 
+route::post('suggestions','MailSenderController@suggestions');
+
 Route::post('/contactus','MailSenderController@contactus');
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
