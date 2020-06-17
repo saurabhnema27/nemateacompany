@@ -187,7 +187,7 @@
         <!-- Content -->
         <h6 class="text-uppercase font-weight-bold">Nema Tea Company</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>NemaTeaCompany is an industry leading Tea Wholesaler, supplying individuals and companies with the products they need. We were founded in 1975 by Nema Group, and have been located in Bhopal ever since. Learn all about nemateacompany and what we offer by giving us a call.</p>
+        <p>We're the right wholesaler supplier for your business / Individual, you can count on nemateacompany for quality products at affordable prices. We offer a wide selection of tea leaves and tea masala's for the people at Bhopal, IN. If you have something for us related to Tea Leaves / Tea Bags / Tea Masala's and even any suggestions related to this then please let us know we'll love to hear it out.</p>
 
       </div>
       <!-- Grid column -->

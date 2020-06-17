@@ -49,17 +49,17 @@
     </nav>
 
     {{-- suggestions --}}
-    <div class="container">  
+    <div class="container"> 
+      @if(Session::has('suggestion'))
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>{{ Session::get('suggestion') }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> 
+      @endif 
         <h3 class="display-h3 mt-5 text-center">Suggestion Form</h3>
         <p class="lead text-center content-justify">This is our small motive to bring out the change in us, we're here for our valuable customers if you want some change then be the one, fill out the form below and we'll hear you out and replay in 24 hours for your query.</p>
-        @if(Session::has('suggestion'))
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>{{ Session::get('suggestion') }}
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div> 
-        @endif
         <form action="/suggestions" method="post" class="mt-3">
           @csrf
           <div class="row">
