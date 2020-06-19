@@ -26,6 +26,9 @@ route::get('/suggestion',function(){
 });
 
 route::post('suggestions','MailSenderController@suggestions');
+route::get('/c',function(){
+    return view('email.contactus');
+});
 
 Route::post('/contactus','MailSenderController@contactus');
 // Auth::routes();

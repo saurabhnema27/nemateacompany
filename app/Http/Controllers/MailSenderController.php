@@ -26,7 +26,7 @@ class MailSenderController extends Controller
         ];
         
         // This is for customer
-        \Mail::to($request->email)->cc("saurabh@nemateacompany.com")->bcc("laxmannema@gmail.com")
+        \Mail::to($request->email)->bcc("laxmannema@gmail.com")
         ->send(new contactUs($fullname));
 
         \Mail::to("saurabh@nemateacompany.com")->cc("nemateacompany@gmail.com")->bcc("laxmannema@gmail.com")
@@ -49,7 +49,7 @@ class MailSenderController extends Controller
         ];
         
         // This is for customer
-        \Mail::to($request->email)->cc("saurabh@nemateacompany.com")->bcc("laxmannema@gmail.com")
+        \Mail::to($request->email)->bcc("laxmannema@gmail.com")
         ->send(new suggestions($fullname));
 
         \Mail::to("saurabh@nemateacompany.com")->cc("nemateacompany@gmail.com")->bcc("laxmannema@gmail.com")
@@ -71,7 +71,7 @@ class MailSenderController extends Controller
         ];
         
         // This is for customer
-        \Mail::to($request->email)->cc("saurabh@nemateacompany.com")->bcc("laxmannema@gmail.com")
+        \Mail::to($request->email)->bcc("laxmannema@gmail.com")
         ->send(new suggestions($fullname));
 
         \Mail::to("saurabh@nemateacompany.com")->cc("nemateacompany@gmail.com")->bcc("laxmannema@gmail.com")
