@@ -20,12 +20,12 @@
         <table class="table">
             <thead class="thead-dark">
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Number</th>
-                <th scope="col">Subject</th>
-                <th scope="col">Message</th>
+                <th scope="col-sm">#</th>
+                <th scope="col-sm">Name</th>
+                <th scope="col-sm">Email</th>
+                <th scope="col-sm">Number</th>
+                <th scope="col-sm">Subject</th>
+                <th scope="col-sm">Message</th>
               </tr>
             </thead>
             <tbody>
