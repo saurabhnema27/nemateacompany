@@ -72,22 +72,22 @@
         <div class="col-sm">
           <h3 class="h5">Tea Leaves</h3>
           <p class="lead">These are the big tea leaves which are available form different gardens of Assam, Darjiling, and other tea gardens. This brings bright and energetic morning routine for all tea lovers. This type of Tea leave will only give you a great taste but not good color.</p>
-          <a href="#" class="btn btn-warning">Buy Now</a>
+          <a href="/buy" class="btn btn-warning">Buy Now</a>
         </div>
         <div class="col-sm">
           <h3 class="h5">Granularity Tea</h3>
           <p class="lead">They are the chunks of tea leaves which is mainly of round shape,  which go through the process of granularity and after it put to dry for days, then they are ready to make you your better health and better immunity to fight the odds. It give you a light color but a great taste in tea</p>
-          <a href="#" class="btn btn-warning">Buy Now</a>
+          <a href="/buy" class="btn btn-warning">Buy Now</a>
         </div>
         <div class="col-sm">
           <h3 class="h5">Dust Tea</h3>
           <p class="lead">They are dusty tea which is made from tea leaves after giving a fine mixter and then drying it up. It is mainly use to get a color in tea with a light taste in it.</p>
-          <a href="#" class="btn btn-warning">Buy Now</a>
+          <a href="/buy" class="btn btn-warning">Buy Now</a>
         </div>
         <div class="col-sm">
           <h3 class="h5">Tea Masala's</h3>
           <p class="lead">We're offering you a mixed variety of Tea Masala's which is made up of Ginger, Balck-Paper, Cloves, Cardamom, mulethi and much more ground herbs and oregano's, to make you immune system better.</p>
-          <a href="#" class="btn btn-warning">Buy Now</a>
+          <a href="/buy" class="btn btn-warning">Buy Now</a>
         </div>
       </div>
     </div>

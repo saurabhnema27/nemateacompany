@@ -543,7 +543,7 @@
                                                             title="nemateacompany.com" target="_blank" style="color:#363636;text-decoration:none;">nemateacompany.com</a>. We promise to use your information only according to our <a href="https://nemateacompany.com"
                                                             title="Privacy Policy" target="_blank" style="color:#363636; text-decoration:underline;">privacy policy</a>. <br>
                                                           <br> © 2020 <br> <a href="#" target="_blank"
-                                                            style="color:#363636;text-decoration:none;">Nema Tea Company, Bagsewaniya, Bhopal - 42043</a>
+                                                            style="color:#363636;text-decoration:none;">Nema Tea Company, Bagsewaniya, Bhopal - 462043</a>
                                                           <br><br>
                                                           {{-- <a href="#" title="Unsubscribe" target="_blank" style="color:#363636; text-decoration:underline;">Unsubscribe</a> from future
                                                           emails &nbsp;|&nbsp; <a href="#" title="View in browser" target="_blank" style="color:#363636;">View in Browser</a> --}}

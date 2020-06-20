@@ -26,11 +26,15 @@ route::get('/suggestion',function(){
 });
 
 route::post('suggestions','MailSenderController@suggestions');
-route::get('/c',function(){
-    return view('email.contactus');
-});
 
 Route::post('/contactus','MailSenderController@contactus');
-// Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/buy','buyController@index')->middleware('auth');
+Route::post('/place-order','buyController@placeOrder')->middleware('auth');
+Route::get('/order-histroy','buyController@orderhistroy')->middleware('auth');
+Route::post('/edit-details','UserController@update')->middleware('auth');
+Route::get('/order-history','buyController@orderhistory')->middleware('auth');

@@ -7,6 +7,8 @@ use App\Mail\contactUs;
 use App\Mail\newContactInq;
 use App\Mail\suggestions;
 use App\Mail\suggestionsInq;
+use App\Mail\OrderReceived;
+use App\Mail\GotyourOrder;
 use App\contactus as ctu;
 
 class MailSenderController extends Controller
@@ -78,5 +80,17 @@ class MailSenderController extends Controller
         ->send(new suggestionsInq($data));
 
         return redirect('/feedback')->with("suggestion","Message is sent successfully it'll take 24 hrs to evalute it, Thanks for your Time.");
+    }
+
+    public static function OrderMailtoAdmin($data)
+    {
+        $test = \Mail::to('saurabh@nemateacompany.com')->send(new OrderReceived($data));
+        return $test;
+    }
+
+    public static function OrderMailtoPerson($data)
+    {
+        $test = \Mail::to($data['user']['email'])->send(new GotyourOrder($data));
+        return $test;
     }
 }
