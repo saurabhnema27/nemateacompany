@@ -58,7 +58,7 @@
                           <tr>
                             <th scope="row">{{$o->id}}</th>
                             <td>{{$o->product_name}}</td>
-                            <td>{{$o->quantity}}</td>
+                            <td>{{$o->quantity}} KG</td>
                             <td>{{$o->price}}</td>
                             <td>{{$o->status}}</td>
                             <td>{{$o->payment_type}}</td>
