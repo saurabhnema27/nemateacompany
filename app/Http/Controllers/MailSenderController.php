@@ -10,6 +10,7 @@ use App\Mail\suggestionsInq;
 use App\Mail\OrderReceived;
 use App\Mail\GotYourOrder;
 use App\contactus as ctu;
+use App\Mail\RegistrationMail;
 
 class MailSenderController extends Controller
 {
@@ -92,6 +93,11 @@ class MailSenderController extends Controller
     {
         $test = \Mail::to($data['user']['email'])->send(new GotYourOrder($data));
         return $test;
+    }
+
+    public static function RegistrationMail($data)
+    {
+        \Mail::to($data['email'])->send(new Registrationmail($data));
     }
 }
 
