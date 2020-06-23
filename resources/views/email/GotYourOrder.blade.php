@@ -17,7 +17,7 @@
 <body>
     <div class="jumbotron text-center">
         <h1 class="h4">Thank You! {{$data['user']['name']}}, for placing new order.</h1>
-        <p class="lead"><strong>We will look to it,</strong> and try to order it, with in 24 hours of span .</p>
+        <p class="lead"><strong>We will look to it,</strong> and try to Deliver it,befor 24 hours of span .</p>
         <hr>
         <h3 class="h4">Order Details</h3>
         <ul class="list-group list-group-flush">

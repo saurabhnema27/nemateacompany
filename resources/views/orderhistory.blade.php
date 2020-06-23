@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Order History</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -44,7 +44,7 @@
                     <table class="table">
                         <thead class="thead-dark">
                           <tr>
-                            <th scope="col">Id</th>
+                            <th scope="col">Order Id</th>
                             <th scope="col">Product Name</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">Price</th>

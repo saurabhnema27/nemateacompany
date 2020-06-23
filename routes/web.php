@@ -29,12 +29,16 @@ route::post('suggestions','MailSenderController@suggestions');
 
 Route::post('/contactus','MailSenderController@contactus');
 
+Route::get('/r',function(){
+    return view('email.RegistrationMail');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/buy','buyController@index')->middleware('auth');
-Route::post('/place-order','buyController@placeOrder')->middleware('auth');
-Route::get('/order-histroy','buyController@orderhistroy')->middleware('auth');
+Route::get('/buy','BuyController@index')->middleware('auth');
+Route::post('/place-order','BuyController@placeOrder')->middleware('auth');
+Route::get('/order-histroy','BuyController@orderhistroy')->middleware('auth');
 Route::post('/edit-details','UserController@update')->middleware('auth');
-Route::get('/order-history','buyController@orderhistory')->middleware('auth');
+Route::get('/order-history','BuyController@orderhistory')->middleware('auth');
