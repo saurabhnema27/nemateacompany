@@ -8,7 +8,7 @@ use App\Mail\newContactInq;
 use App\Mail\suggestions;
 use App\Mail\suggestionsInq;
 use App\Mail\OrderReceived;
-use App\Mail\GotyourOrder;
+use App\Mail\GotYourOrder;
 use App\contactus as ctu;
 
 class MailSenderController extends Controller
@@ -90,7 +90,8 @@ class MailSenderController extends Controller
 
     public static function OrderMailtoPerson($data)
     {
-        $test = \Mail::to($data['user']['email'])->send(new GotyourOrder($data));
+        $test = \Mail::to($data['user']['email'])->send(new GotYourOrder($data));
         return $test;
     }
 }
+

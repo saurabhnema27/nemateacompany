@@ -16,7 +16,6 @@ Jenkins trigger will work this time
 // Route::get('/welcome', function () {
 //     return view('welcome');
 // });
-
 Route::get('/',function(){
     return view('index');
 });
@@ -38,4 +37,3 @@ Route::post('/place-order','BuyController@placeOrder')->middleware('auth');
 Route::get('/order-histroy','BuyController@orderhistroy')->middleware('auth');
 Route::post('/edit-details','UserController@update')->middleware('auth');
 Route::get('/order-history','BuyController@orderhistory')->middleware('auth');
-
