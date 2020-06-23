@@ -20,6 +20,7 @@
         <p class="lead"><strong>We will look to it,</strong> and try to Deliver it,befor 24 hours of span .</p>
         <hr>
         <h3 class="h4">Order Details</h3>
+        <p class="lead"> Order Id: <h3 class="h4"> {{$data['order']['id']}}</h3></p>
         <ul class="list-group list-group-flush">
             <li class="list-group-item"><strong>Product Name:</strong> {{$data['order']['product_name']}}</li>
             <li class="list-group-item"><strong>Quantity Order (in Kg):</strong> {{$data['order']['quantity']}} Kg</li>
