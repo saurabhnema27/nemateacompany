@@ -139,7 +139,11 @@
                             <td>{{$o->product_name}}</td>
                             <td>{{$o->quantity}}</td>
                             <td>{{$o->price}}</td>
-                            <td>{{$o->status}}</td>
+                            @if($o->status == 'Inprogress')
+                                <td class="text-danger">{{$o->status}}</td>
+                            @elseif($o->status == 'Completed')    
+                                <td class="text-success">{{$o->status}}</td>
+                            @endif    
                             <td>{{$o->payment_type}}</td>
                             <td>{{$o->created_at->diffForHumans()}}</td>
                           </tr>
