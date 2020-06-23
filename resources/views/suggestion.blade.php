@@ -39,10 +39,10 @@
                 <a class="nav-link h6" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link h6" href="#">Login</a>
+                <a class="nav-link h6" href="/login">Login</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link h6" href="#">Register</a>
+                <a class="nav-link h6" href="/register">Register</a>
             </li>
           </ul>
         </div>

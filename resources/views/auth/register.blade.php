@@ -45,7 +45,7 @@
                             <div class="col-md-6">
                                 <input type="text" class="form-control @error('name') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address" autofocus>
 
-                                @error('name')
+                                @error('address')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -59,7 +59,7 @@
                             <div class="col-md-6">
                                 <input id="email" type="text" class="form-control @error('text') is-invalid @enderror" name="living_in" value="{{ old('living_in') }}" required autocomplete="text">
 
-                                @error('text')
+                                @error('living_in')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -73,7 +73,7 @@
                             <div class="col-md-6">
                                 <input id="number" type="number" class="form-control @error('text') is-invalid @enderror" name="pincode" value="{{ old('pincode') }}" required autocomplete="text">
 
-                                @error('number')
+                                @error('pincode')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
