@@ -137,7 +137,7 @@
                           <tr>
                             <th scope="row">{{$o->id}}</th>
                             <td>{{$o->product_name}}</td>
-                            <td>{{$o->quantity}}</td>
+                            <td>{{$o->quantity}} KG</td>
                             <td>{{$o->price}}</td>
                             @if($o->status == 'Inprogress')
                                 <td class="text-danger">{{$o->status}}</td>
