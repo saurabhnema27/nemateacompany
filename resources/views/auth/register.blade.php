@@ -71,7 +71,7 @@
                             <label for="number" class="col-md-4 col-form-label text-md-right">{{ __('Pincode') }}</label>
 
                             <div class="col-md-6">
-                                <input id="number" type="number" class="form-control @error('text') is-invalid @enderror" name="pincode" value="{{ old('pincode') }}" required autocomplete="text">
+                                <input id="number" type="number" class="form-control @error('number') is-invalid @enderror" name="pincode" value="{{ old('pincode') }}" required autocomplete="text">
 
                                 @error('pincode')
                                     <span class="invalid-feedback" role="alert">
@@ -85,7 +85,7 @@
                             <label for="number" class="col-md-4 col-form-label text-md-right">{{ __('Mobile Number') }}</label>
 
                             <div class="col-md-6">
-                                <input id="number" type="number" class="form-control @error('text') is-invalid @enderror" name="number" value="{{ old('number') }}" required autocomplete="text">
+                                <input id="number" type="number" class="form-control @error('number') is-invalid @enderror" name="number" value="{{ old('number') }}" required autocomplete="text">
 
                                 @error('number')
                                     <span class="invalid-feedback" role="alert">

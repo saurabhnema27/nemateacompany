@@ -25,6 +25,7 @@ route::get('/suggestion',function(){
     return view('suggestion');
 });
 
+
 route::post('suggestions','MailSenderController@suggestions');
 
 Route::post('/contactus','MailSenderController@contactus');
@@ -33,9 +34,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/buy','BuyController@index')->middleware('auth');
-Route::post('/place-order','BuyController@placeOrder')->middleware('auth');
-Route::get('/order-histroy','BuyController@orderhistroy')->middleware('auth');
-Route::post('/edit-details','UserController@update')->middleware('auth');
-Route::get('/order-history','BuyController@orderhistory')->middleware('auth');
+Route::group(['middleware' => 'auth'], function () {
+    
+    Route::get('/buy','BuyController@index');
+    Route::post('/place-order','BuyController@placeOrder');
+    Route::get('/order-histroy','BuyController@orderhistroy');
+    Route::post('/edit-details','UserController@update');
+    Route::get('/order-history','BuyController@orderhistory');
+
+});
 

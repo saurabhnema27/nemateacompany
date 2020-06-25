@@ -5,8 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
-
+            <div class="card-header"><p class="lead" id="message"></div>
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-warning alert alert-warning alert-dismissible fade show" role="alert">
@@ -156,4 +155,17 @@
         </div>
     </div>
 </div>
+<script>
+    var mydate = new Date();
+    var hrs = mydate.getHours();
+
+    var greet;
+    if(hrs < 12)
+        greet = "Good Morning";
+    else if(hrs >=12 && hrs <=17)
+        greet = "Good Afternoon";
+    else if(hrs >=17 && hrs <= 24)
+        greet = "Good Evening";
+    document.getElementById("message").innerHTML = greet;    
+</script>
 @endsection

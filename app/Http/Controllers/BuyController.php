@@ -14,7 +14,12 @@ class BuyController extends Controller
     public function index()
     {
         $user = Auth::user();
-        return view('buy')->with('user',$user);
+        $order = order::where('user_id',$user->id)->latest()->first();
+        $data = [
+            'user' => $user,
+            'order' => $order
+        ];
+        return view('buy')->with('data',$data);
     }
 
     public function placeOrder(Request $req)
