@@ -32,6 +32,10 @@ Route::post('/contactus','MailSenderController@contactus');
 
 Auth::routes();
 
+route::get('/test',function(){
+    return view('test');
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function () {
