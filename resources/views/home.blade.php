@@ -122,7 +122,7 @@
                     <table class="table">
                         <thead class="thead-dark">
                           <tr>
-                            <th scope="col">Id</th>
+                            <th scope="col">OrderId</th>
                             <th scope="col">Product Name</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">Price</th>
