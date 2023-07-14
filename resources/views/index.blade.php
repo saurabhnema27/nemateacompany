@@ -261,8 +261,8 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="http://nemateacompany.com/"> nemateacompany.com</a> Design and Develop By <a href="http://www.saurabhnema.com" target="_blank">Saurabh Nema</a>
+  <div class="footer-copyright text-center py-3">© <?php echo date("Y"); ?> Copyright:
+    <a href="http://nemateacompany.in/"> nemateacompany.com</a> Design and Develop By <a href="https://saurabhnema27.github.io/" target="_blank">Saurabh Nema</a>
   </div>
   <!-- Copyright -->
 
