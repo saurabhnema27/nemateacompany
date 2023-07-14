@@ -89,8 +89,8 @@
                                     <select class="form-control summable" id="order_det" name="product_type" required = "required">
                                         <option selected="selected">None</option>
                                         <option value="320">Tea Leaves</option>
-                                        <option value="250">Granularity Tea</option>
-                                        <option value="220">Dust Tea</option>
+                                        <option value="300">Granularity Tea</option>
+                                        <option value="300">Dust Tea</option>
                                         {{-- <option value="100">Tea Masala's</option> --}}
                                     </select>
                                 </div>
@@ -169,14 +169,14 @@
               document.getElementById('card-content').innerHTML = "This type of Tea leave will only give you a great taste but not good color.";
               $("#prodectoverview1").show();
             }
-            else if(this.value === '250')
+            else if(this.value === '300')
             {
               document.getElementById('image').src = "/images/granual.jpg";
               document.getElementById('card-title').innerHTML = "Granularity Tea";
               document.getElementById('card-content').innerHTML = " <strong> This is our 2 Best Seller Tea,</strong> It give you a light color but a great taste in tea";
               $("#prodectoverview1").show();
             }
-            else if(this.value === '220')
+            else if(this.value === '300')
             {
               document.getElementById('image').src = "/images/dust.jpg";
               document.getElementById('card-title').innerHTML = "Dust Tea";
