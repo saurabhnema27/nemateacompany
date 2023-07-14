@@ -41,7 +41,7 @@ class BuyController extends Controller
             $order->status = "Inprogress";
             $order->save();
         }
-        elseif(($req->price / $req->quant) === 250)
+        elseif(($req->price / $req->quant) === 300)
         {
             $order->quantity = $req->quant;
             $order->price = $req->price;
