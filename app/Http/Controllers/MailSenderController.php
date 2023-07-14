@@ -32,7 +32,7 @@ class MailSenderController extends Controller
         \Mail::to($request->email)->bcc("laxmannema@gmail.com")
         ->send(new contactUs($fullname));
 
-        \Mail::to("saurabh@nemateacompany.com")->cc("nemateacompany@gmail.com")->bcc("laxmannema@gmail.com")
+        \Mail::to("saurabh@nemateacompany.com")->cc("laxmannema@gmail.com")
         ->send(new newContactInq($data));
 
         return redirect('/')->with("success","Message is sent successfully it'll take 24 hrs to evalute it, Thanks for you Time.");
@@ -55,7 +55,7 @@ class MailSenderController extends Controller
         \Mail::to($request->email)->bcc("laxmannema@gmail.com")
         ->send(new suggestions($fullname));
 
-        \Mail::to("saurabh@nemateacompany.com")->cc("nemateacompany@gmail.com")->bcc("laxmannema@gmail.com")
+        \Mail::to("saurabh@nemateacompany.com")->cc("laxmannema@gmail.com")
         ->send(new suggestionsInq($data));
 
         return redirect('/suggestion')->with("suggestion","Message is sent successfully it'll take 24 hrs to evalute it, Thanks for your Time.");
@@ -77,7 +77,7 @@ class MailSenderController extends Controller
         \Mail::to($request->email)->bcc("laxmannema@gmail.com")
         ->send(new suggestions($fullname));
 
-        \Mail::to("saurabh@nemateacompany.com")->cc("nemateacompany@gmail.com")->bcc("laxmannema@gmail.com")
+        \Mail::to("saurabh@nemateacompany.com")->cc("laxmannema@gmail.com")
         ->send(new suggestionsInq($data));
 
         return redirect('/feedback')->with("suggestion","Message is sent successfully it'll take 24 hrs to evalute it, Thanks for your Time.");
